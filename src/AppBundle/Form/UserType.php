@@ -28,6 +28,15 @@ class UserType extends AbstractType
     {
         $resolver->setDefaults(array(
             'data_class' => 'AppBundle\Entity\User',
-		));
+            'csrf_protection'   => false,
+        ));
 	}
+
+    /**
+     * @return string
+     */
+    public function getBlockPrefix()
+    {
+        return '';
+    }
 }
