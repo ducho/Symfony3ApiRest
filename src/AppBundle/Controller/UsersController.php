@@ -54,7 +54,7 @@ class UsersController extends FOSRestController
 	{
 		$em = $this->getDoctrine()->getManager();
 		$user = $em->getRepository('AppBundle:User')->find($id);
-		$form = $this->createForm('AppBundle\Form\UserType', $user);
+		$form = $this->createForm('AppBundle\Form\UserType', $user, array('method' => 'PUT'));
 		$form->handleRequest($request);
 
 		if ($form->isValid()) {
