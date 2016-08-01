@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
   <parameters>
-    <parameter key="kernel.root_dir">/Users/Antonio/Programmazione/RestSymfony/app</parameter>
+    <parameter key="kernel.root_dir">/Users/Antonio/Programmazione/Symfony3ApiRest/app</parameter>
     <parameter key="kernel.environment">dev</parameter>
     <parameter key="kernel.debug">true</parameter>
     <parameter key="kernel.name">app</parameter>
-    <parameter key="kernel.cache_dir">/Users/Antonio/Programmazione/RestSymfony/var/cache/dev</parameter>
-    <parameter key="kernel.logs_dir">/Users/Antonio/Programmazione/RestSymfony/var/logs</parameter>
+    <parameter key="kernel.cache_dir">/Users/Antonio/Programmazione/Symfony3ApiRest/var/cache/dev</parameter>
+    <parameter key="kernel.logs_dir">/Users/Antonio/Programmazione/Symfony3ApiRest/var/logs</parameter>
     <parameter key="kernel.bundles" type="collection">
       <parameter key="FrameworkBundle">Symfony\Bundle\FrameworkBundle\FrameworkBundle</parameter>
       <parameter key="SecurityBundle">Symfony\Bundle\SecurityBundle\SecurityBundle</parameter>
@@ -26,8 +26,8 @@
     </parameter>
     <parameter key="kernel.charset">UTF-8</parameter>
     <parameter key="kernel.container_class">appDevDebugProjectContainer</parameter>
-    <parameter key="database_host">192.168.99.100</parameter>
-    <parameter key="database_port">3307</parameter>
+    <parameter key="database_host">127.0.0.1</parameter>
+    <parameter key="database_port">3306</parameter>
     <parameter key="database_name">test</parameter>
     <parameter key="database_user">root</parameter>
     <parameter key="database_password">root</parameter>
@@ -49,7 +49,7 @@
       <parameter key="cookie_httponly">true</parameter>
       <parameter key="gc_probability">1</parameter>
     </parameter>
-    <parameter key="session.save_path">/Users/Antonio/Programmazione/RestSymfony/app/../var/sessions/dev</parameter>
+    <parameter key="session.save_path">/Users/Antonio/Programmazione/Symfony3ApiRest/app/../var/sessions/dev</parameter>
     <parameter key="session.metadata.update_threshold">0</parameter>
     <parameter key="form.type_extension.csrf.enabled">true</parameter>
     <parameter key="form.type_extension.csrf.field_name">_token</parameter>
@@ -62,7 +62,7 @@
     <parameter key="validator.translation_domain">validators</parameter>
     <parameter key="profiler_listener.only_exceptions">false</parameter>
     <parameter key="profiler_listener.only_master_requests">false</parameter>
-    <parameter key="profiler.storage.dsn">file:/Users/Antonio/Programmazione/RestSymfony/var/cache/dev/profiler</parameter>
+    <parameter key="profiler.storage.dsn">file:/Users/Antonio/Programmazione/Symfony3ApiRest/var/cache/dev/profiler</parameter>
     <parameter key="router.options.generator_class">Symfony\Component\Routing\Generator\UrlGenerator</parameter>
     <parameter key="router.options.generator_base_class">Symfony\Component\Routing\Generator\UrlGenerator</parameter>
     <parameter key="router.options.generator_dumper_class">Symfony\Component\Routing\Generator\Dumper\PhpGeneratorDumper</parameter>
@@ -74,13 +74,13 @@
     <parameter key="router.request_context.host">localhost</parameter>
     <parameter key="router.request_context.scheme">http</parameter>
     <parameter key="router.request_context.base_url"></parameter>
-    <parameter key="router.resource">/Users/Antonio/Programmazione/RestSymfony/app/config/routing_dev.yml</parameter>
+    <parameter key="router.resource">/Users/Antonio/Programmazione/Symfony3ApiRest/app/config/routing_dev.yml</parameter>
     <parameter key="router.cache_class_prefix">appDev</parameter>
     <parameter key="request_listener.http_port">80</parameter>
     <parameter key="request_listener.https_port">443</parameter>
     <parameter key="serializer.mapping.cache.prefix"></parameter>
     <parameter key="debug.error_handler.throw_at">-1</parameter>
-    <parameter key="debug.container.dump">/Users/Antonio/Programmazione/RestSymfony/var/cache/dev/appDevDebugProjectContainer.xml</parameter>
+    <parameter key="debug.container.dump">/Users/Antonio/Programmazione/Symfony3ApiRest/var/cache/dev/appDevDebugProjectContainer.xml</parameter>
     <parameter key="security.authentication.trust_resolver.anonymous_class">Symfony\Component\Security\Core\Authentication\Token\AnonymousToken</parameter>
     <parameter key="security.authentication.trust_resolver.rememberme_class">Symfony\Component\Security\Core\Authentication\Token\RememberMeToken</parameter>
     <parameter key="security.role_hierarchy.roles" type="collection">
@@ -185,7 +185,7 @@
     <parameter key="swiftmailer.mailer.default.transport.smtp.auth_mode">null</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.timeout">30</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.source_ip">null</parameter>
-    <parameter key="swiftmailer.spool.default.memory.path">/Users/Antonio/Programmazione/RestSymfony/var/cache/dev/swiftmailer/spool/default</parameter>
+    <parameter key="swiftmailer.spool.default.memory.path">/Users/Antonio/Programmazione/Symfony3ApiRest/var/cache/dev/swiftmailer/spool/default</parameter>
     <parameter key="swiftmailer.mailer.default.spool.enabled">true</parameter>
     <parameter key="swiftmailer.mailer.default.plugin.impersonate">null</parameter>
     <parameter key="swiftmailer.mailer.default.single_address">null</parameter>
@@ -303,7 +303,7 @@
     <parameter key="doctrine.orm.second_level_cache.cache_configuration.class">Doctrine\ORM\Cache\CacheConfiguration</parameter>
     <parameter key="doctrine.orm.second_level_cache.regions_configuration.class">Doctrine\ORM\Cache\RegionsConfiguration</parameter>
     <parameter key="doctrine.orm.auto_generate_proxy_classes">true</parameter>
-    <parameter key="doctrine.orm.proxy_dir">/Users/Antonio/Programmazione/RestSymfony/var/cache/dev/doctrine/orm/Proxies</parameter>
+    <parameter key="doctrine.orm.proxy_dir">/Users/Antonio/Programmazione/Symfony3ApiRest/var/cache/dev/doctrine/orm/Proxies</parameter>
     <parameter key="doctrine.orm.proxy_namespace">Proxies</parameter>
     <parameter key="sensio_framework_extra.view.guesser.class">Sensio\Bundle\FrameworkExtraBundle\Templating\TemplateGuesser</parameter>
     <parameter key="sensio_framework_extra.controller.listener.class">Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener</parameter>
@@ -333,7 +333,7 @@
     <parameter key="fos_rest.violation_formatter.class">FOS\RestBundle\Util\ViolationFormatter</parameter>
     <parameter key="fos_rest.request.param_fetcher.class">FOS\RestBundle\Request\ParamFetcher</parameter>
     <parameter key="fos_rest.request.param_fetcher.reader.class">FOS\RestBundle\Request\ParamReader</parameter>
-    <parameter key="fos_rest.cache_dir">/Users/Antonio/Programmazione/RestSymfony/var/cache/dev/fos_rest</parameter>
+    <parameter key="fos_rest.cache_dir">/Users/Antonio/Programmazione/Symfony3ApiRest/var/cache/dev/fos_rest</parameter>
     <parameter key="fos_rest.routing.loader.default_format">json</parameter>
     <parameter key="fos_rest.routing.loader.include_format">true</parameter>
     <parameter key="fos_rest.form.extension.csrf_disable.class">FOS\RestBundle\Form\Extension\DisableCSRFExtension</parameter>
@@ -499,10 +499,14 @@
       <argument type="service" id="translator"/>
       <argument type="service" id="request_stack"/>
     </service>
+    <service id="validate_request_listener" class="Symfony\Component\HttpKernel\EventListener\ValidateRequestListener">
+      <tag name="kernel.event_subscriber"/>
+    </service>
     <service id="http_kernel" class="Symfony\Component\HttpKernel\HttpKernel">
       <argument type="service" id="debug.event_dispatcher"/>
       <argument type="service" id="debug.controller_resolver"/>
       <argument type="service" id="request_stack"/>
+      <argument type="service" id="debug.argument_resolver"/>
     </service>
     <service id="request_stack" class="Symfony\Component\HttpFoundation\RequestStack"/>
     <service id="cache_warmer" class="Symfony\Component\HttpKernel\CacheWarmer\CacheWarmerAggregate">
@@ -514,7 +518,7 @@
               <service class="Symfony\Bundle\FrameworkBundle\CacheWarmer\TemplateFinder" public="false">
                 <argument type="service" id="kernel"/>
                 <argument type="service" id="templating.filename_parser"/>
-                <argument>/Users/Antonio/Programmazione/RestSymfony/app/Resources</argument>
+                <argument>/Users/Antonio/Programmazione/Symfony3ApiRest/app/Resources</argument>
               </service>
             </argument>
             <argument type="service" id="templating.locator"/>
@@ -541,7 +545,7 @@
               <service class="Symfony\Bundle\FrameworkBundle\CacheWarmer\TemplateFinder" public="false">
                 <argument type="service" id="kernel"/>
                 <argument type="service" id="templating.filename_parser"/>
-                <argument>/Users/Antonio/Programmazione/RestSymfony/app/Resources</argument>
+                <argument>/Users/Antonio/Programmazione/Symfony3ApiRest/app/Resources</argument>
               </service>
             </argument>
             <argument type="collection"/>
@@ -554,7 +558,7 @@
             <argument type="service">
               <service class="Symfony\Bundle\TwigBundle\TemplateIterator" public="false">
                 <argument type="service" id="kernel"/>
-                <argument>/Users/Antonio/Programmazione/RestSymfony/app</argument>
+                <argument>/Users/Antonio/Programmazione/Symfony3ApiRest/app</argument>
                 <argument type="collection"/>
               </service>
             </argument>
@@ -572,7 +576,45 @@
       <tag name="kernel.cache_warmer"/>
     </service>
     <service id="cache_clearer" class="Symfony\Component\HttpKernel\CacheClearer\ChainCacheClearer">
-      <argument type="collection"/>
+      <argument type="collection">
+        <argument type="service">
+          <service class="Symfony\Component\HttpKernel\CacheClearer\Psr6CacheClearer" public="false">
+            <tag name="kernel.cache_clearer"/>
+            <call method="addPool">
+              <argument type="service" id="cache.app"/>
+            </call>
+            <call method="addPool">
+              <argument type="service" id="cache.system"/>
+            </call>
+            <call method="addPool">
+              <argument type="service">
+                <service class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
+                  <tag name="cache.pool"/>
+                  <argument>6Mi-WGxnBr</argument>
+                  <argument></argument>
+                  <argument>OojLJ441pItBGn+jzo9D3w</argument>
+                  <argument>/Users/Antonio/Programmazione/Symfony3ApiRest/var/cache/dev/pools</argument>
+                  <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
+                  <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
+                </service>
+              </argument>
+            </call>
+            <call method="addPool">
+              <argument type="service">
+                <service class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
+                  <tag name="cache.pool"/>
+                  <argument>2KcUif+J5R</argument>
+                  <argument></argument>
+                  <argument>OojLJ441pItBGn+jzo9D3w</argument>
+                  <argument>/Users/Antonio/Programmazione/Symfony3ApiRest/var/cache/dev/pools</argument>
+                  <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
+                  <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
+                </service>
+              </argument>
+            </call>
+          </service>
+        </argument>
+      </argument>
     </service>
     <service id="service_container" synthetic="true">
       <autowiring-type>Symfony\Component\DependencyInjection\ContainerInterface</autowiring-type>
@@ -582,7 +624,7 @@
     <service id="filesystem" class="Symfony\Component\Filesystem\Filesystem"/>
     <service id="file_locator" class="Symfony\Component\HttpKernel\Config\FileLocator">
       <argument type="service" id="kernel"/>
-      <argument>/Users/Antonio/Programmazione/RestSymfony/app/Resources</argument>
+      <argument>/Users/Antonio/Programmazione/Symfony3ApiRest/app/Resources</argument>
     </service>
     <service id="uri_signer" class="Symfony\Component\HttpKernel\UriSigner">
       <argument>ThisTokenIsNotSoSecretChangeIt</argument>
@@ -697,7 +739,7 @@
         </argument>
       </argument>
       <argument type="collection">
-        <argument key="cache_dir">/Users/Antonio/Programmazione/RestSymfony/var/cache/dev/translations</argument>
+        <argument key="cache_dir">/Users/Antonio/Programmazione/Symfony3ApiRest/var/cache/dev/translations</argument>
         <argument key="debug">true</argument>
       </argument>
       <argument type="collection"/>
@@ -882,6 +924,24 @@
       <argument>false</argument>
       <argument>false</argument>
     </service>
+    <service id="cache.app" class="Symfony\Component\Cache\Adapter\FilesystemAdapter">
+      <tag name="cache.pool"/>
+      <argument>-XJkfBkpxH</argument>
+      <argument></argument>
+      <argument>/Users/Antonio/Programmazione/Symfony3ApiRest/var/cache/dev/pools</argument>
+      <call method="setLogger">
+        <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
+      </call>
+    </service>
+    <service id="cache.system" class="Symfony\Component\Cache\Adapter\AdapterInterface">
+      <tag name="cache.pool"/>
+      <argument>qa+7A16SL0</argument>
+      <argument></argument>
+      <argument>OojLJ441pItBGn+jzo9D3w</argument>
+      <argument>/Users/Antonio/Programmazione/Symfony3ApiRest/var/cache/dev/pools</argument>
+      <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
+      <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
+    </service>
     <service id="session" class="Symfony\Component\HttpFoundation\Session\Session">
       <argument type="service" id="session.storage.native"/>
       <argument type="service">
@@ -927,42 +987,14 @@
             <argument type="service" id="service_container"/>
             <argument type="collection">
               <argument key="Symfony\Component\Form\Extension\Core\Type\FormType">form.type.form</argument>
-              <argument key="Symfony\Component\Form\Extension\Core\Type\BirthdayType">form.type.birthday</argument>
-              <argument key="Symfony\Component\Form\Extension\Core\Type\CheckboxType">form.type.checkbox</argument>
               <argument key="Symfony\Component\Form\Extension\Core\Type\ChoiceType">form.type.choice</argument>
-              <argument key="Symfony\Component\Form\Extension\Core\Type\CollectionType">form.type.collection</argument>
-              <argument key="Symfony\Component\Form\Extension\Core\Type\CountryType">form.type.country</argument>
-              <argument key="Symfony\Component\Form\Extension\Core\Type\DateType">form.type.date</argument>
-              <argument key="Symfony\Component\Form\Extension\Core\Type\DateTimeType">form.type.datetime</argument>
-              <argument key="Symfony\Component\Form\Extension\Core\Type\EmailType">form.type.email</argument>
-              <argument key="Symfony\Component\Form\Extension\Core\Type\FileType">form.type.file</argument>
-              <argument key="Symfony\Component\Form\Extension\Core\Type\HiddenType">form.type.hidden</argument>
-              <argument key="Symfony\Component\Form\Extension\Core\Type\IntegerType">form.type.integer</argument>
-              <argument key="Symfony\Component\Form\Extension\Core\Type\LanguageType">form.type.language</argument>
-              <argument key="Symfony\Component\Form\Extension\Core\Type\LocaleType">form.type.locale</argument>
-              <argument key="Symfony\Component\Form\Extension\Core\Type\MoneyType">form.type.money</argument>
-              <argument key="Symfony\Component\Form\Extension\Core\Type\NumberType">form.type.number</argument>
-              <argument key="Symfony\Component\Form\Extension\Core\Type\PasswordType">form.type.password</argument>
-              <argument key="Symfony\Component\Form\Extension\Core\Type\PercentType">form.type.percent</argument>
-              <argument key="Symfony\Component\Form\Extension\Core\Type\RadioType">form.type.radio</argument>
-              <argument key="Symfony\Component\Form\Extension\Core\Type\RangeType">form.type.range</argument>
-              <argument key="Symfony\Component\Form\Extension\Core\Type\RepeatedType">form.type.repeated</argument>
-              <argument key="Symfony\Component\Form\Extension\Core\Type\SearchType">form.type.search</argument>
-              <argument key="Symfony\Component\Form\Extension\Core\Type\TextareaType">form.type.textarea</argument>
-              <argument key="Symfony\Component\Form\Extension\Core\Type\TextType">form.type.text</argument>
-              <argument key="Symfony\Component\Form\Extension\Core\Type\TimeType">form.type.time</argument>
-              <argument key="Symfony\Component\Form\Extension\Core\Type\TimezoneType">form.type.timezone</argument>
-              <argument key="Symfony\Component\Form\Extension\Core\Type\UrlType">form.type.url</argument>
-              <argument key="Symfony\Component\Form\Extension\Core\Type\ButtonType">form.type.button</argument>
-              <argument key="Symfony\Component\Form\Extension\Core\Type\SubmitType">form.type.submit</argument>
-              <argument key="Symfony\Component\Form\Extension\Core\Type\ResetType">form.type.reset</argument>
-              <argument key="Symfony\Component\Form\Extension\Core\Type\CurrencyType">form.type.currency</argument>
               <argument key="Symfony\Bridge\Doctrine\Form\Type\EntityType">form.type.entity</argument>
             </argument>
             <argument type="collection">
               <argument key="Symfony\Component\Form\Extension\Core\Type\FormType" type="collection">
                 <argument>form.type_extension.form.http_foundation</argument>
                 <argument>form.type_extension.form.validator</argument>
+                <argument>form.type_extension.upload.validator</argument>
                 <argument>form.type_extension.csrf</argument>
                 <argument>form.type_extension.form.data_collector</argument>
                 <argument>fos_rest.form.extension.csrf_disable</argument>
@@ -996,10 +1028,10 @@
       <argument type="service" id="property_accessor"/>
     </service>
     <service id="form.type.birthday" class="Symfony\Component\Form\Extension\Core\Type\BirthdayType">
-      <tag name="form.type"/>
+      <deprecated>The "%service_id%" service is deprecated since Symfony 3.1 and will be removed in 4.0.</deprecated>
     </service>
     <service id="form.type.checkbox" class="Symfony\Component\Form\Extension\Core\Type\CheckboxType">
-      <tag name="form.type"/>
+      <deprecated>The "%service_id%" service is deprecated since Symfony 3.1 and will be removed in 4.0.</deprecated>
     </service>
     <service id="form.type.choice" class="Symfony\Component\Form\Extension\Core\Type\ChoiceType">
       <tag name="form.type"/>
@@ -1017,85 +1049,85 @@
       </argument>
     </service>
     <service id="form.type.collection" class="Symfony\Component\Form\Extension\Core\Type\CollectionType">
-      <tag name="form.type"/>
+      <deprecated>The "%service_id%" service is deprecated since Symfony 3.1 and will be removed in 4.0.</deprecated>
     </service>
     <service id="form.type.country" class="Symfony\Component\Form\Extension\Core\Type\CountryType">
-      <tag name="form.type"/>
+      <deprecated>The "%service_id%" service is deprecated since Symfony 3.1 and will be removed in 4.0.</deprecated>
     </service>
     <service id="form.type.date" class="Symfony\Component\Form\Extension\Core\Type\DateType">
-      <tag name="form.type"/>
+      <deprecated>The "%service_id%" service is deprecated since Symfony 3.1 and will be removed in 4.0.</deprecated>
     </service>
     <service id="form.type.datetime" class="Symfony\Component\Form\Extension\Core\Type\DateTimeType">
-      <tag name="form.type"/>
+      <deprecated>The "%service_id%" service is deprecated since Symfony 3.1 and will be removed in 4.0.</deprecated>
     </service>
     <service id="form.type.email" class="Symfony\Component\Form\Extension\Core\Type\EmailType">
-      <tag name="form.type"/>
+      <deprecated>The "%service_id%" service is deprecated since Symfony 3.1 and will be removed in 4.0.</deprecated>
     </service>
     <service id="form.type.file" class="Symfony\Component\Form\Extension\Core\Type\FileType">
-      <tag name="form.type"/>
+      <deprecated>The "%service_id%" service is deprecated since Symfony 3.1 and will be removed in 4.0.</deprecated>
     </service>
     <service id="form.type.hidden" class="Symfony\Component\Form\Extension\Core\Type\HiddenType">
-      <tag name="form.type"/>
+      <deprecated>The "%service_id%" service is deprecated since Symfony 3.1 and will be removed in 4.0.</deprecated>
     </service>
     <service id="form.type.integer" class="Symfony\Component\Form\Extension\Core\Type\IntegerType">
-      <tag name="form.type"/>
+      <deprecated>The "%service_id%" service is deprecated since Symfony 3.1 and will be removed in 4.0.</deprecated>
     </service>
     <service id="form.type.language" class="Symfony\Component\Form\Extension\Core\Type\LanguageType">
-      <tag name="form.type"/>
+      <deprecated>The "%service_id%" service is deprecated since Symfony 3.1 and will be removed in 4.0.</deprecated>
     </service>
     <service id="form.type.locale" class="Symfony\Component\Form\Extension\Core\Type\LocaleType">
-      <tag name="form.type"/>
+      <deprecated>The "%service_id%" service is deprecated since Symfony 3.1 and will be removed in 4.0.</deprecated>
     </service>
     <service id="form.type.money" class="Symfony\Component\Form\Extension\Core\Type\MoneyType">
-      <tag name="form.type"/>
+      <deprecated>The "%service_id%" service is deprecated since Symfony 3.1 and will be removed in 4.0.</deprecated>
     </service>
     <service id="form.type.number" class="Symfony\Component\Form\Extension\Core\Type\NumberType">
-      <tag name="form.type"/>
+      <deprecated>The "%service_id%" service is deprecated since Symfony 3.1 and will be removed in 4.0.</deprecated>
     </service>
     <service id="form.type.password" class="Symfony\Component\Form\Extension\Core\Type\PasswordType">
-      <tag name="form.type"/>
+      <deprecated>The "%service_id%" service is deprecated since Symfony 3.1 and will be removed in 4.0.</deprecated>
     </service>
     <service id="form.type.percent" class="Symfony\Component\Form\Extension\Core\Type\PercentType">
-      <tag name="form.type"/>
+      <deprecated>The "%service_id%" service is deprecated since Symfony 3.1 and will be removed in 4.0.</deprecated>
     </service>
     <service id="form.type.radio" class="Symfony\Component\Form\Extension\Core\Type\RadioType">
-      <tag name="form.type"/>
+      <deprecated>The "%service_id%" service is deprecated since Symfony 3.1 and will be removed in 4.0.</deprecated>
     </service>
     <service id="form.type.range" class="Symfony\Component\Form\Extension\Core\Type\RangeType">
-      <tag name="form.type"/>
+      <deprecated>The "%service_id%" service is deprecated since Symfony 3.1 and will be removed in 4.0.</deprecated>
     </service>
     <service id="form.type.repeated" class="Symfony\Component\Form\Extension\Core\Type\RepeatedType">
-      <tag name="form.type"/>
+      <deprecated>The "%service_id%" service is deprecated since Symfony 3.1 and will be removed in 4.0.</deprecated>
     </service>
     <service id="form.type.search" class="Symfony\Component\Form\Extension\Core\Type\SearchType">
-      <tag name="form.type"/>
+      <deprecated>The "%service_id%" service is deprecated since Symfony 3.1 and will be removed in 4.0.</deprecated>
     </service>
     <service id="form.type.textarea" class="Symfony\Component\Form\Extension\Core\Type\TextareaType">
-      <tag name="form.type"/>
+      <deprecated>The "%service_id%" service is deprecated since Symfony 3.1 and will be removed in 4.0.</deprecated>
     </service>
     <service id="form.type.text" class="Symfony\Component\Form\Extension\Core\Type\TextType">
-      <tag name="form.type"/>
+      <deprecated>The "%service_id%" service is deprecated since Symfony 3.1 and will be removed in 4.0.</deprecated>
     </service>
     <service id="form.type.time" class="Symfony\Component\Form\Extension\Core\Type\TimeType">
-      <tag name="form.type"/>
+      <deprecated>The "%service_id%" service is deprecated since Symfony 3.1 and will be removed in 4.0.</deprecated>
     </service>
     <service id="form.type.timezone" class="Symfony\Component\Form\Extension\Core\Type\TimezoneType">
-      <tag name="form.type"/>
+      <deprecated>The "%service_id%" service is deprecated since Symfony 3.1 and will be removed in 4.0.</deprecated>
     </service>
     <service id="form.type.url" class="Symfony\Component\Form\Extension\Core\Type\UrlType">
-      <tag name="form.type"/>
+      <deprecated>The "%service_id%" service is deprecated since Symfony 3.1 and will be removed in 4.0.</deprecated>
     </service>
     <service id="form.type.button" class="Symfony\Component\Form\Extension\Core\Type\ButtonType">
-      <tag name="form.type"/>
+      <deprecated>The "%service_id%" service is deprecated since Symfony 3.1 and will be removed in 4.0.</deprecated>
     </service>
     <service id="form.type.submit" class="Symfony\Component\Form\Extension\Core\Type\SubmitType">
-      <tag name="form.type"/>
+      <deprecated>The "%service_id%" service is deprecated since Symfony 3.1 and will be removed in 4.0.</deprecated>
     </service>
     <service id="form.type.reset" class="Symfony\Component\Form\Extension\Core\Type\ResetType">
-      <tag name="form.type"/>
+      <deprecated>The "%service_id%" service is deprecated since Symfony 3.1 and will be removed in 4.0.</deprecated>
     </service>
     <service id="form.type.currency" class="Symfony\Component\Form\Extension\Core\Type\CurrencyType">
-      <tag name="form.type"/>
+      <deprecated>The "%service_id%" service is deprecated since Symfony 3.1 and will be removed in 4.0.</deprecated>
     </service>
     <service id="form.type_extension.form.http_foundation" class="Symfony\Component\Form\Extension\HttpFoundation\Type\FormTypeHttpFoundationExtension">
       <tag name="form.type_extension" extended_type="Symfony\Component\Form\Extension\Core\Type\FormType" extended-type="Symfony\Component\Form\Extension\Core\Type\FormType"/>
@@ -1118,6 +1150,11 @@
     </service>
     <service id="form.type_extension.submit.validator" class="Symfony\Component\Form\Extension\Validator\Type\SubmitTypeValidatorExtension">
       <tag name="form.type_extension" extended_type="Symfony\Component\Form\Extension\Core\Type\SubmitType" extended-type="Symfony\Component\Form\Extension\Core\Type\SubmitType"/>
+    </service>
+    <service id="form.type_extension.upload.validator" class="Symfony\Component\Form\Extension\Validator\Type\UploadValidatorExtension">
+      <tag name="form.type_extension" extended_type="Symfony\Component\Form\Extension\Core\Type\FormType" extended-type="Symfony\Component\Form\Extension\Core\Type\FormType"/>
+      <argument type="service" id="translator"/>
+      <argument>validators</argument>
     </service>
     <service id="form.type_extension.csrf" class="Symfony\Component\Form\Extension\Csrf\Type\FormTypeCsrfExtension">
       <tag name="form.type_extension" extended_type="Symfony\Component\Form\Extension\Core\Type\FormType" extended-type="Symfony\Component\Form\Extension\Core\Type\FormType"/>
@@ -1158,7 +1195,7 @@
     <service id="templating.filename_parser" class="Symfony\Bundle\FrameworkBundle\Templating\TemplateFilenameParser"/>
     <service id="templating.locator" class="Symfony\Bundle\FrameworkBundle\Templating\Loader\TemplateLocator" public="false">
       <argument type="service" id="file_locator"/>
-      <argument>/Users/Antonio/Programmazione/RestSymfony/var/cache/dev</argument>
+      <argument>/Users/Antonio/Programmazione/Symfony3ApiRest/var/cache/dev</argument>
     </service>
     <service id="validator" class="Symfony\Component\Validator\Validator\ValidatorInterface">
       <factory service="validator.builder" method="getValidator"/>
@@ -1188,7 +1225,7 @@
       </call>
       <call method="addXmlMappings">
         <argument type="collection">
-          <argument>/Users/Antonio/Programmazione/RestSymfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/config/validation.xml</argument>
+          <argument>/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/config/validation.xml</argument>
         </argument>
       </call>
       <call method="enableAnnotationMapping">
@@ -1220,7 +1257,7 @@
       <tag name="monolog.logger" channel="profiler"/>
       <argument type="service">
         <service class="Symfony\Component\HttpKernel\Profiler\FileProfilerStorage" public="false">
-          <argument>file:/Users/Antonio/Programmazione/RestSymfony/var/cache/dev/profiler</argument>
+          <argument>file:/Users/Antonio/Programmazione/Symfony3ApiRest/var/cache/dev/profiler</argument>
         </service>
       </argument>
       <argument type="service" id="monolog.logger.profiler" on-invalid="null"/>
@@ -1287,6 +1324,7 @@
             <argument type="service" id="security.token_storage" on-invalid="ignore"/>
             <argument type="service" id="security.role_hierarchy"/>
             <argument type="service" id="security.logout_url_generator"/>
+            <argument type="service" id="debug.security.access.decision_manager"/>
           </service>
         </argument>
       </call>
@@ -1340,7 +1378,7 @@
       <argument>false</argument>
       <argument>false</argument>
     </service>
-    <service id="data_collector.request" class="Symfony\Component\HttpKernel\DataCollector\RequestDataCollector">
+    <service id="data_collector.request" class="Symfony\Bundle\FrameworkBundle\DataCollector\RequestDataCollector">
       <tag name="kernel.event_subscriber"/>
       <tag name="data_collector" template="@WebProfiler/Collector/request.html.twig" id="request" priority="335"/>
     </service>
@@ -1542,6 +1580,10 @@
         <argument>Symfony\Component\HttpKernel\EventListener\TranslatorListener</argument>
       </call>
       <call method="addSubscriberService">
+        <argument>validate_request_listener</argument>
+        <argument>Symfony\Component\HttpKernel\EventListener\ValidateRequestListener</argument>
+      </call>
+      <call method="addSubscriberService">
         <argument>session_listener</argument>
         <argument>Symfony\Bundle\FrameworkBundle\EventListener\SessionListener</argument>
       </call>
@@ -1559,7 +1601,7 @@
       </call>
       <call method="addSubscriberService">
         <argument>data_collector.request</argument>
-        <argument>Symfony\Component\HttpKernel\DataCollector\RequestDataCollector</argument>
+        <argument>Symfony\Bundle\FrameworkBundle\DataCollector\RequestDataCollector</argument>
       </call>
       <call method="addSubscriberService">
         <argument>router_listener</argument>
@@ -1624,11 +1666,44 @@
         </service>
       </argument>
       <argument type="service" id="debug.stopwatch"/>
+      <argument type="service" id="debug.argument_resolver"/>
+    </service>
+    <service id="debug.argument_resolver" class="Symfony\Component\HttpKernel\Controller\TraceableArgumentResolver">
+      <argument type="service">
+        <service class="Symfony\Component\HttpKernel\Controller\ArgumentResolver" public="false">
+          <argument type="service">
+            <service class="Symfony\Component\HttpKernel\ControllerMetadata\ArgumentMetadataFactory" public="false"/>
+          </argument>
+          <argument type="collection">
+            <argument type="service">
+              <service class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\RequestAttributeValueResolver" public="false">
+                <tag name="controller.argument_value_resolver" priority="100"/>
+              </service>
+            </argument>
+            <argument type="service">
+              <service class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\RequestValueResolver" public="false">
+                <tag name="controller.argument_value_resolver" priority="50"/>
+              </service>
+            </argument>
+            <argument type="service">
+              <service class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver" public="false">
+                <tag name="controller.argument_value_resolver" priority="-100"/>
+              </service>
+            </argument>
+            <argument type="service">
+              <service class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver" public="false">
+                <tag name="controller.argument_value_resolver" priority="-150"/>
+              </service>
+            </argument>
+          </argument>
+        </service>
+      </argument>
+      <argument type="service" id="debug.stopwatch"/>
     </service>
     <service id="security.authorization_checker" class="Symfony\Component\Security\Core\Authorization\AuthorizationChecker">
       <argument type="service" id="security.token_storage"/>
       <argument type="service" id="security.authentication.manager"/>
-      <argument type="service" id="security.access.decision_manager"/>
+      <argument type="service" id="debug.security.access.decision_manager"/>
       <argument>false</argument>
     </service>
     <service id="security.token_storage" class="Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorage"/>
@@ -1636,7 +1711,7 @@
       <argument type="collection">
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>57690baf813d61.08902509</argument>
+            <argument>579f5a814be244.92814731</argument>
           </service>
         </argument>
         <argument type="service">
@@ -1650,7 +1725,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>57690baf813d61.08902509</argument>
+            <argument>579f5a814be244.92814731</argument>
           </service>
         </argument>
       </argument>
@@ -1665,38 +1740,6 @@
     </service>
     <service id="security.authentication_utils" class="Symfony\Component\Security\Http\Authentication\AuthenticationUtils">
       <argument type="service" id="request_stack"/>
-    </service>
-    <service id="security.access.decision_manager" class="Symfony\Component\Security\Core\Authorization\AccessDecisionManager" public="false">
-      <argument type="collection"/>
-      <argument>affirmative</argument>
-      <argument>false</argument>
-      <argument>true</argument>
-      <call method="setVoters">
-        <argument type="collection">
-          <argument type="service">
-            <service class="Symfony\Component\Security\Core\Authorization\Voter\RoleHierarchyVoter" public="false">
-              <tag name="security.voter" priority="245"/>
-              <argument type="service" id="security.role_hierarchy"/>
-            </service>
-          </argument>
-          <argument type="service">
-            <service class="Symfony\Component\Security\Core\Authorization\Voter\ExpressionVoter" public="false">
-              <tag name="security.voter" priority="245"/>
-              <argument type="service">
-                <service class="Symfony\Component\Security\Core\Authorization\ExpressionLanguage" public="false"/>
-              </argument>
-              <argument type="service" id="security.authentication.trust_resolver"/>
-              <argument type="service" id="security.role_hierarchy" on-invalid="null"/>
-            </service>
-          </argument>
-          <argument type="service">
-            <service class="Symfony\Component\Security\Core\Authorization\Voter\AuthenticatedVoter" public="false">
-              <tag name="security.voter" priority="250"/>
-              <argument type="service" id="security.authentication.trust_resolver"/>
-            </service>
-          </argument>
-        </argument>
-      </call>
     </service>
     <service id="security.role_hierarchy" class="Symfony\Component\Security\Core\Role\RoleHierarchy" public="false">
       <argument type="collection">
@@ -1773,7 +1816,7 @@
     <service id="security.access_listener" class="Symfony\Component\Security\Http\Firewall\AccessListener" public="false">
       <tag name="monolog.logger" channel="security"/>
       <argument type="service" id="security.token_storage"/>
-      <argument type="service" id="security.access.decision_manager"/>
+      <argument type="service" id="debug.security.access.decision_manager"/>
       <argument type="service" id="security.access_map"/>
       <argument type="service" id="security.authentication.manager"/>
     </service>
@@ -1791,6 +1834,42 @@
     <service id="security.authentication.guard_handler" class="Symfony\Component\Security\Guard\GuardAuthenticatorHandler">
       <argument type="service" id="security.token_storage"/>
       <argument type="service" id="debug.event_dispatcher" on-invalid="null"/>
+    </service>
+    <service id="debug.security.access.decision_manager" class="Symfony\Component\Security\Core\Authorization\DebugAccessDecisionManager" public="false">
+      <argument type="service">
+        <service class="Symfony\Component\Security\Core\Authorization\AccessDecisionManager" public="false">
+          <argument type="collection"/>
+          <argument>affirmative</argument>
+          <argument>false</argument>
+          <argument>true</argument>
+        </service>
+      </argument>
+      <call method="setVoters">
+        <argument type="collection">
+          <argument type="service">
+            <service class="Symfony\Component\Security\Core\Authorization\Voter\RoleHierarchyVoter" public="false">
+              <tag name="security.voter" priority="245"/>
+              <argument type="service" id="security.role_hierarchy"/>
+            </service>
+          </argument>
+          <argument type="service">
+            <service class="Symfony\Component\Security\Core\Authorization\Voter\ExpressionVoter" public="false">
+              <tag name="security.voter" priority="245"/>
+              <argument type="service">
+                <service class="Symfony\Component\Security\Core\Authorization\ExpressionLanguage" public="false"/>
+              </argument>
+              <argument type="service" id="security.authentication.trust_resolver"/>
+              <argument type="service" id="security.role_hierarchy" on-invalid="null"/>
+            </service>
+          </argument>
+          <argument type="service">
+            <service class="Symfony\Component\Security\Core\Authorization\Voter\AuthenticatedVoter" public="false">
+              <tag name="security.voter" priority="250"/>
+              <argument type="service" id="security.authentication.trust_resolver"/>
+            </service>
+          </argument>
+        </argument>
+      </call>
     </service>
     <service id="security.user.provider.concrete.in_memory" class="Symfony\Component\Security\Core\User\InMemoryUserProvider" public="false">
       <call method="createUser">
@@ -1834,12 +1913,13 @@
             <argument>main</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="debug.event_dispatcher" on-invalid="null"/>
+            <argument type="service" id="security.authentication.trust_resolver"/>
           </service>
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>57690baf813d61.08902509</argument>
+            <argument>579f5a814be244.92814731</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -1872,6 +1952,7 @@
             <argument>secured_area</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="debug.event_dispatcher" on-invalid="null"/>
+            <argument type="service" id="security.authentication.trust_resolver"/>
           </service>
         </argument>
         <argument type="service">
@@ -1890,7 +1971,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>57690baf813d61.08902509</argument>
+            <argument>579f5a814be244.92814731</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -1925,7 +2006,7 @@
           <argument>form_div_layout.html.twig</argument>
         </argument>
         <argument key="autoescape">filename</argument>
-        <argument key="cache">/Users/Antonio/Programmazione/RestSymfony/var/cache/dev/twig</argument>
+        <argument key="cache">/Users/Antonio/Programmazione/Symfony3ApiRest/var/cache/dev/twig</argument>
         <argument key="charset">UTF-8</argument>
         <argument key="paths" type="collection"/>
         <argument key="date" type="collection">
@@ -1985,7 +2066,7 @@
           <service class="Symfony\Bridge\Twig\Extension\CodeExtension" public="false">
             <tag name="twig.extension"/>
             <argument>null</argument>
-            <argument>/Users/Antonio/Programmazione/RestSymfony/app</argument>
+            <argument>/Users/Antonio/Programmazione/Symfony3ApiRest/app</argument>
             <argument>UTF-8</argument>
           </service>
         </argument>
@@ -2144,7 +2225,7 @@
       <argument>twig.controller.exception:showAction</argument>
     </service>
     <service id="monolog.handler.main" class="Monolog\Handler\StreamHandler">
-      <argument>/Users/Antonio/Programmazione/RestSymfony/var/logs/dev.log</argument>
+      <argument>/Users/Antonio/Programmazione/Symfony3ApiRest/var/logs/dev.log</argument>
       <argument>100</argument>
       <argument>true</argument>
       <argument>null</argument>
@@ -2185,8 +2266,8 @@
     <service id="doctrine.dbal.default_connection" class="Doctrine\DBAL\Connection">
       <argument type="collection">
         <argument key="driver">pdo_mysql</argument>
-        <argument key="host">192.168.99.100</argument>
-        <argument key="port">3307</argument>
+        <argument key="host">127.0.0.1</argument>
+        <argument key="port">3306</argument>
         <argument key="dbname">test</argument>
         <argument key="user">root</argument>
         <argument key="password">root</argument>
@@ -2248,17 +2329,17 @@
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_metadata_cache" class="Doctrine\Common\Cache\ArrayCache">
       <call method="setNamespace">
-        <argument>sf2orm_default_e0021990027a602ce991d1516bf84a541c15c18b517f1e0cfb31024f74bcfdee</argument>
+        <argument>sf2orm_default_236e7391b04f6bc2880c646c8e702a1bf9e819281d8561a8e407f058593581f1</argument>
       </call>
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_result_cache" class="Doctrine\Common\Cache\ArrayCache">
       <call method="setNamespace">
-        <argument>sf2orm_default_e0021990027a602ce991d1516bf84a541c15c18b517f1e0cfb31024f74bcfdee</argument>
+        <argument>sf2orm_default_236e7391b04f6bc2880c646c8e702a1bf9e819281d8561a8e407f058593581f1</argument>
       </call>
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_query_cache" class="Doctrine\Common\Cache\ArrayCache">
       <call method="setNamespace">
-        <argument>sf2orm_default_e0021990027a602ce991d1516bf84a541c15c18b517f1e0cfb31024f74bcfdee</argument>
+        <argument>sf2orm_default_236e7391b04f6bc2880c646c8e702a1bf9e819281d8561a8e407f058593581f1</argument>
       </call>
     </service>
     <service id="doctrine.orm.default_entity_listener_resolver" class="Doctrine\ORM\Mapping\DefaultEntityListenerResolver"/>
@@ -2295,7 +2376,7 @@
                     <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
                       <argument type="service" id="annotation_reader"/>
                       <argument type="collection">
-                        <argument>/Users/Antonio/Programmazione/RestSymfony/src/AppBundle/Entity</argument>
+                        <argument>/Users/Antonio/Programmazione/Symfony3ApiRest/src/AppBundle/Entity</argument>
                       </argument>
                     </service>
                   </argument>
@@ -2305,7 +2386,7 @@
             </argument>
           </call>
           <call method="setProxyDir">
-            <argument>/Users/Antonio/Programmazione/RestSymfony/var/cache/dev/doctrine/orm/Proxies</argument>
+            <argument>/Users/Antonio/Programmazione/Symfony3ApiRest/var/cache/dev/doctrine/orm/Proxies</argument>
           </call>
           <call method="setProxyNamespace">
             <argument>Proxies</argument>
@@ -3011,6 +3092,18 @@
         <argument type="service" id="monolog.handler.debug"/>
       </call>
     </service>
+    <service id="monolog.logger.cache" class="Symfony\Bridge\Monolog\Logger">
+      <argument>cache</argument>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.console"/>
+      </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.main"/>
+      </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.debug"/>
+      </call>
+    </service>
     <service id="monolog.logger.templating" class="Symfony\Bridge\Monolog\Logger">
       <argument>templating</argument>
       <call method="pushHandler">
@@ -3091,12 +3184,12 @@
       <argument>true</argument>
     </service>
     <service id="session.storage.filesystem" class="Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorage">
-      <argument>/Users/Antonio/Programmazione/RestSymfony/var/cache/dev/sessions</argument>
+      <argument>/Users/Antonio/Programmazione/Symfony3ApiRest/var/cache/dev/sessions</argument>
       <argument>MOCKSESSID</argument>
       <argument type="service" id="session.storage.metadata_bag"/>
     </service>
     <service id="session.handler" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeFileSessionHandler">
-      <argument>/Users/Antonio/Programmazione/RestSymfony/app/../var/sessions/dev</argument>
+      <argument>/Users/Antonio/Programmazione/Symfony3ApiRest/app/../var/sessions/dev</argument>
     </service>
     <service id="templating.loader" class="Symfony\Bundle\FrameworkBundle\Templating\Loader\FilesystemLoader">
       <argument type="service" id="templating.locator"/>
@@ -3105,13 +3198,19 @@
       <argument type="service" id="twig"/>
       <argument type="service" id="templating.name_parser"/>
       <argument type="service" id="templating.locator"/>
+      <autowiring-type>Symfony\Component\Templating\EngineInterface</autowiring-type>
+      <autowiring-type>Symfony\Bundle\FrameworkBundle\Templating\EngineInterface</autowiring-type>
+    </service>
+    <service id="cache.default_redis_provider" class="Redis">
+      <argument>redis://localhost</argument>
+      <factory class="Symfony\Component\Cache\Adapter\RedisAdapter" method="createConnection"/>
     </service>
     <service id="router" class="Symfony\Bundle\FrameworkBundle\Routing\Router">
       <tag name="monolog.logger" channel="router"/>
       <argument type="service" id="service_container"/>
-      <argument>/Users/Antonio/Programmazione/RestSymfony/app/config/routing_dev.yml</argument>
+      <argument>/Users/Antonio/Programmazione/Symfony3ApiRest/app/config/routing_dev.yml</argument>
       <argument type="collection">
-        <argument key="cache_dir">/Users/Antonio/Programmazione/RestSymfony/var/cache/dev</argument>
+        <argument key="cache_dir">/Users/Antonio/Programmazione/Symfony3ApiRest/var/cache/dev</argument>
         <argument key="debug">true</argument>
         <argument key="generator_class">Symfony\Component\Routing\Generator\UrlGenerator</argument>
         <argument key="generator_base_class">Symfony\Component\Routing\Generator\UrlGenerator</argument>
@@ -3131,14 +3230,17 @@
     </service>
     <service id="annotation_reader" class="Doctrine\Common\Annotations\CachedReader">
       <argument type="service">
-        <service class="Doctrine\Common\Annotations\AnnotationReader" public="false"/>
+        <service class="Doctrine\Common\Annotations\AnnotationReader" public="false">
+          <autowiring-type>Doctrine\Common\Annotations\Reader</autowiring-type>
+        </service>
       </argument>
       <argument type="service">
         <service class="Doctrine\Common\Cache\FilesystemCache" public="false">
-          <argument>/Users/Antonio/Programmazione/RestSymfony/var/cache/dev/annotations</argument>
+          <argument>/Users/Antonio/Programmazione/Symfony3ApiRest/var/cache/dev/annotations</argument>
         </service>
       </argument>
       <argument>true</argument>
+      <autowiring-type>Doctrine\Common\Annotations\Reader</autowiring-type>
     </service>
     <service id="security.encoder_factory" class="Symfony\Component\Security\Core\Encoder\EncoderFactory">
       <argument type="collection"/>
@@ -3152,38 +3254,38 @@
       <argument type="service" id="templating.locator"/>
       <argument type="service" id="templating.name_parser"/>
       <call method="addPath">
-        <argument>/Users/Antonio/Programmazione/RestSymfony/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views</argument>
+        <argument>/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views</argument>
         <argument>Framework</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/Antonio/Programmazione/RestSymfony/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/views</argument>
+        <argument>/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/views</argument>
         <argument>Security</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/Antonio/Programmazione/RestSymfony/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views</argument>
+        <argument>/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views</argument>
         <argument>Twig</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/Antonio/Programmazione/RestSymfony/vendor/symfony/swiftmailer-bundle/Resources/views</argument>
+        <argument>/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/symfony/swiftmailer-bundle/Resources/views</argument>
         <argument>Swiftmailer</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/Antonio/Programmazione/RestSymfony/vendor/doctrine/doctrine-bundle/Resources/views</argument>
+        <argument>/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/doctrine/doctrine-bundle/Resources/views</argument>
         <argument>Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/Antonio/Programmazione/RestSymfony/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views</argument>
+        <argument>/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views</argument>
         <argument>Debug</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/Antonio/Programmazione/RestSymfony/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views</argument>
+        <argument>/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views</argument>
         <argument>WebProfiler</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/Antonio/Programmazione/RestSymfony/app/Resources/views</argument>
+        <argument>/Users/Antonio/Programmazione/Symfony3ApiRest/app/Resources/views</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/Antonio/Programmazione/RestSymfony/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form</argument>
+        <argument>/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form</argument>
       </call>
     </service>
     <service id="logger" class="Symfony\Bridge\Monolog\Logger">
@@ -3296,21 +3398,21 @@
                 <argument type="service">
                   <service class="Metadata\Driver\FileLocator" public="false">
                     <argument type="collection">
-                      <argument key="Symfony\Bundle\FrameworkBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\SecurityBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\TwigBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\MonologBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/symfony/monolog-bundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\SwiftmailerBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/symfony/swiftmailer-bundle/Resources/config/serializer</argument>
-                      <argument key="Doctrine\Bundle\DoctrineBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/doctrine/doctrine-bundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\FrameworkExtraBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/sensio/framework-extra-bundle/Resources/config/serializer</argument>
-                      <argument key="AppBundle">/Users/Antonio/Programmazione/RestSymfony/src/AppBundle/Resources/config/serializer</argument>
-                      <argument key="FOS\RestBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/friendsofsymfony/rest-bundle/FOS/RestBundle/Resources/config/serializer</argument>
-                      <argument key="JMS\SerializerBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/jms/serializer-bundle/JMS/SerializerBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\DebugBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\WebProfilerBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\DistributionBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/sensio/distribution-bundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\GeneratorBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/sensio/generator-bundle/Resources/config/serializer</argument>
-                      <argument key="Doctrine\Bundle\FixturesBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/doctrine/doctrine-fixtures-bundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\FrameworkBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\SecurityBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\TwigBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\MonologBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/symfony/monolog-bundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\SwiftmailerBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/symfony/swiftmailer-bundle/Resources/config/serializer</argument>
+                      <argument key="Doctrine\Bundle\DoctrineBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/doctrine/doctrine-bundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\FrameworkExtraBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/sensio/framework-extra-bundle/Resources/config/serializer</argument>
+                      <argument key="AppBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/src/AppBundle/Resources/config/serializer</argument>
+                      <argument key="FOS\RestBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/friendsofsymfony/rest-bundle/FOS/RestBundle/Resources/config/serializer</argument>
+                      <argument key="JMS\SerializerBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/jms/serializer-bundle/JMS/SerializerBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\DebugBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\WebProfilerBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\DistributionBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/sensio/distribution-bundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\GeneratorBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/sensio/generator-bundle/Resources/config/serializer</argument>
+                      <argument key="Doctrine\Bundle\FixturesBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/doctrine/doctrine-fixtures-bundle/Resources/config/serializer</argument>
                     </argument>
                   </service>
                 </argument>
@@ -3321,21 +3423,21 @@
                 <argument type="service">
                   <service class="Metadata\Driver\FileLocator" public="false">
                     <argument type="collection">
-                      <argument key="Symfony\Bundle\FrameworkBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\SecurityBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\TwigBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\MonologBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/symfony/monolog-bundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\SwiftmailerBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/symfony/swiftmailer-bundle/Resources/config/serializer</argument>
-                      <argument key="Doctrine\Bundle\DoctrineBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/doctrine/doctrine-bundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\FrameworkExtraBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/sensio/framework-extra-bundle/Resources/config/serializer</argument>
-                      <argument key="AppBundle">/Users/Antonio/Programmazione/RestSymfony/src/AppBundle/Resources/config/serializer</argument>
-                      <argument key="FOS\RestBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/friendsofsymfony/rest-bundle/FOS/RestBundle/Resources/config/serializer</argument>
-                      <argument key="JMS\SerializerBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/jms/serializer-bundle/JMS/SerializerBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\DebugBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\WebProfilerBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\DistributionBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/sensio/distribution-bundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\GeneratorBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/sensio/generator-bundle/Resources/config/serializer</argument>
-                      <argument key="Doctrine\Bundle\FixturesBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/doctrine/doctrine-fixtures-bundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\FrameworkBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\SecurityBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\TwigBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\MonologBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/symfony/monolog-bundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\SwiftmailerBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/symfony/swiftmailer-bundle/Resources/config/serializer</argument>
+                      <argument key="Doctrine\Bundle\DoctrineBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/doctrine/doctrine-bundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\FrameworkExtraBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/sensio/framework-extra-bundle/Resources/config/serializer</argument>
+                      <argument key="AppBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/src/AppBundle/Resources/config/serializer</argument>
+                      <argument key="FOS\RestBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/friendsofsymfony/rest-bundle/FOS/RestBundle/Resources/config/serializer</argument>
+                      <argument key="JMS\SerializerBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/jms/serializer-bundle/JMS/SerializerBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\DebugBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\WebProfilerBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\DistributionBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/sensio/distribution-bundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\GeneratorBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/sensio/generator-bundle/Resources/config/serializer</argument>
+                      <argument key="Doctrine\Bundle\FixturesBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/doctrine/doctrine-fixtures-bundle/Resources/config/serializer</argument>
                     </argument>
                   </service>
                 </argument>
@@ -3346,21 +3448,21 @@
                 <argument type="service">
                   <service class="Metadata\Driver\FileLocator" public="false">
                     <argument type="collection">
-                      <argument key="Symfony\Bundle\FrameworkBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\SecurityBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\TwigBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\MonologBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/symfony/monolog-bundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\SwiftmailerBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/symfony/swiftmailer-bundle/Resources/config/serializer</argument>
-                      <argument key="Doctrine\Bundle\DoctrineBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/doctrine/doctrine-bundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\FrameworkExtraBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/sensio/framework-extra-bundle/Resources/config/serializer</argument>
-                      <argument key="AppBundle">/Users/Antonio/Programmazione/RestSymfony/src/AppBundle/Resources/config/serializer</argument>
-                      <argument key="FOS\RestBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/friendsofsymfony/rest-bundle/FOS/RestBundle/Resources/config/serializer</argument>
-                      <argument key="JMS\SerializerBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/jms/serializer-bundle/JMS/SerializerBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\DebugBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/config/serializer</argument>
-                      <argument key="Symfony\Bundle\WebProfilerBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\DistributionBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/sensio/distribution-bundle/Resources/config/serializer</argument>
-                      <argument key="Sensio\Bundle\GeneratorBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/sensio/generator-bundle/Resources/config/serializer</argument>
-                      <argument key="Doctrine\Bundle\FixturesBundle">/Users/Antonio/Programmazione/RestSymfony/vendor/doctrine/doctrine-fixtures-bundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\FrameworkBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\SecurityBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\TwigBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\MonologBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/symfony/monolog-bundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\SwiftmailerBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/symfony/swiftmailer-bundle/Resources/config/serializer</argument>
+                      <argument key="Doctrine\Bundle\DoctrineBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/doctrine/doctrine-bundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\FrameworkExtraBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/sensio/framework-extra-bundle/Resources/config/serializer</argument>
+                      <argument key="AppBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/src/AppBundle/Resources/config/serializer</argument>
+                      <argument key="FOS\RestBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/friendsofsymfony/rest-bundle/FOS/RestBundle/Resources/config/serializer</argument>
+                      <argument key="JMS\SerializerBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/jms/serializer-bundle/JMS/SerializerBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\DebugBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/config/serializer</argument>
+                      <argument key="Symfony\Bundle\WebProfilerBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\DistributionBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/sensio/distribution-bundle/Resources/config/serializer</argument>
+                      <argument key="Sensio\Bundle\GeneratorBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/sensio/generator-bundle/Resources/config/serializer</argument>
+                      <argument key="Doctrine\Bundle\FixturesBundle">/Users/Antonio/Programmazione/Symfony3ApiRest/vendor/doctrine/doctrine-fixtures-bundle/Resources/config/serializer</argument>
                     </argument>
                   </service>
                 </argument>
@@ -3406,7 +3508,7 @@
           <call method="setCache">
             <argument type="service">
               <service class="Metadata\Cache\FileCache" public="false">
-                <argument>/Users/Antonio/Programmazione/RestSymfony/var/cache/dev/jms_serializer</argument>
+                <argument>/Users/Antonio/Programmazione/Symfony3ApiRest/var/cache/dev/jms_serializer</argument>
               </service>
             </argument>
           </call>
