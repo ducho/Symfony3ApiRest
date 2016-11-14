@@ -8,13 +8,14 @@ use Symfony\Component\HttpFoundation\Response;
 use FOS\RestBundle\Controller\FOSRestController;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use AppBundle\Entity\User;
+use AppBundle\Form\UserType;
 
 class UsersController extends FOSRestController
 {
     public function getUsersAction()
 	{
 		$em = $this->getDoctrine()->getManager();
-        $user = $em->getRepository('AppBundle:User')->findAll();
+        $user = $em->getRepository(User::class)->findAll();
 
         return $user;
 	}
@@ -22,7 +23,7 @@ class UsersController extends FOSRestController
 	public function getUserAction($id)
     {
         $em = $this->getDoctrine()->getManager();
-        $user = $em->getRepository('AppBundle:User')->find($id);
+        $user = $em->getRepository(User::class)->find($id);
 
         if (!$id) {
             throw new HttpException(400, "Invalid id");
@@ -34,7 +35,7 @@ class UsersController extends FOSRestController
     public function postUserAction(Request $request)
 	{
 		$user = new User();
-        $form = $this->createForm('AppBundle\Form\UserType', $user);
+        $form = $this->createForm(UserType::class, $user);
         $form->handleRequest($request);
 
         if ($form->isValid()) {
@@ -52,8 +53,8 @@ class UsersController extends FOSRestController
 	public function putUserAction(Request $request, $id)
 	{
 		$em = $this->getDoctrine()->getManager();
-		$user = $em->getRepository('AppBundle:User')->find($id);
-		$form = $this->createForm('AppBundle\Form\UserType', $user, array('method' => 'PUT'));
+		$user = $em->getRepository(User::class)->find($id);
+		$form = $this->createForm(UserType::class, $user, array('method' => 'PUT'));
 		$form->handleRequest($request);
 
 		if ($form->isValid()) {
@@ -69,7 +70,7 @@ class UsersController extends FOSRestController
 	public function deleteUserAction($id)
 	{
        	$em = $this->getDoctrine()->getManager();
-	   	$user = $em->getRepository('AppBundle:User')->find($id);
+	   	$user = $em->getRepository(User::class)->find($id);
 	    $em->remove($user);
    	    $em->flush();
 
