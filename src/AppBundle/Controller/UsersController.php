@@ -14,7 +14,7 @@ class UsersController extends FOSRestController
 {
     public function getUsersAction()
     {
-	    $em = $this->getDoctrine()->getManager();
+        $em = $this->getDoctrine()->getManager();
         $user = $em->getRepository(User::class)->findAll();
 
         return $user;
