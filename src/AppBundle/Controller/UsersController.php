@@ -13,12 +13,12 @@ use AppBundle\Form\UserType;
 class UsersController extends FOSRestController
 {
     public function getUsersAction()
-	{
-		$em = $this->getDoctrine()->getManager();
+    {
+	    $em = $this->getDoctrine()->getManager();
         $user = $em->getRepository(User::class)->findAll();
 
         return $user;
-	}
+    }
 
 	public function getUserAction($id)
     {
@@ -33,8 +33,8 @@ class UsersController extends FOSRestController
     }
 
     public function postUserAction(Request $request)
-	{
-		$user = new User();
+    {
+        $user = new User();
         $form = $this->createForm(UserType::class, $user);
         $form->handleRequest($request);
 
@@ -48,36 +48,36 @@ class UsersController extends FOSRestController
 
         throw new HttpException(400, "Invalid data");
 
-	}
+    }
 
-	public function putUserAction(Request $request, $id)
-	{
-		$em = $this->getDoctrine()->getManager();
-		$user = $em->getRepository(User::class)->find($id);
-		$form = $this->createForm(UserType::class, $user, array('method' => 'PUT'));
-		$form->handleRequest($request);
+    public function putUserAction(Request $request, $id)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $user = $em->getRepository(User::class)->find($id);
+        $form = $this->createForm(UserType::class, $user, array('method' => 'PUT'));
+        $form->handleRequest($request);
 
-		if ($form->isValid()) {
-			$em->persist($user);
-			$em->flush();
+        if ($form->isValid()) {
+            $em->persist($user);
+            $em->flush();
 
             return $user;
         }
 
         throw new HttpException(400, "Invalid data");
-	}
+    }
 
-	public function deleteUserAction($id)
-	{
-       	$em = $this->getDoctrine()->getManager();
-	   	$user = $em->getRepository(User::class)->find($id);
-	    $em->remove($user);
-   	    $em->flush();
+    public function deleteUserAction($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $user = $em->getRepository(User::class)->find($id);
+        $em->remove($user);
+        $em->flush();
 
         if (!$id) {
             throw new HttpException(400, "Invalid id");
         }
 
         return $user;
-	}
+    }
 }
