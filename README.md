@@ -10,7 +10,7 @@ Simple Api Rest with Symfony 3
     $ php composer.phar install
 ```
 
-## Curl 
+## Getting with Curl 
 
 ```
     $ curl -H 'content-type: application/json' -v -X GET http://127.0.0.1:8000/api/users 
