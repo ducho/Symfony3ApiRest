@@ -47,7 +47,6 @@ class UsersController extends FOSRestController
         }
 
         throw new HttpException(400, "Invalid data");
-
     }
 
     public function putUserAction(Request $request, $id)
