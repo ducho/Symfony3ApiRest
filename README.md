@@ -19,6 +19,13 @@ Simple Api Rest with Symfony 3
     $ curl -H 'content-type: application/json' -v -X PUT -d '{"name":"test","surname":"test"}' http://127.0.0.1:8000/api/users/:id
     $ curl -H 'content-type: application/json' -v -X DELETE http://127.0.0.1:8000/api/users/:id
 ```
+
+## Pagination with Curl
+
+```
+    $ curl -H 'content-type: application/json' -v -X GET http://127.0.0.1:8000/api/users?page=:number_page 
+```
+
 ## User Authentication with Curl
 
 ```
