@@ -12,10 +12,11 @@ use AppBundle\Form\UserType;
 
 class UsersController extends FOSRestController
 {
-    public function getUsersAction()
+    public function getUsersAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
-        $user = $em->getRepository(User::class)->findAll();
+        $page = $request->query->get('page', 1);
+        $user = $em->getRepository(User::class)->findAllQueryBuilder($page);
 
         return $user;
     }
