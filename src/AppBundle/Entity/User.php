@@ -19,7 +19,7 @@ class User
      */
     private $id;
 
-	/**
+    /**
      *
      * @ORM\Column(type="string", length=50)
      */
@@ -30,7 +30,6 @@ class User
      * @ORM\Column(type="string", length=60)
      */
     private $surname;
-
 
     /**
      * Get id
