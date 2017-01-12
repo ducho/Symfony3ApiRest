@@ -16,9 +16,13 @@ class UsersController extends FOSRestController
     {
         $em = $this->getDoctrine()->getManager();
         $page = $request->query->get('page', 1);
-        $user = $em->getRepository(User::class)->findAllQueryBuilder($page);
+        $users = $em->getRepository(User::class)->findAllQueryBuilder($page);
 
-        return $user;
+        if (!$users) {
+            throw new HttpException(400, "Invalid data");
+        }
+
+        return $users;
     }
 
     public function getUserAction($id)
