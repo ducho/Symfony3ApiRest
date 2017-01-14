@@ -1,4 +1,4 @@
-Symfony 3 Api Rest
+Symfony3ApiRest
 ========================
 
 Simple Api Rest with Symfony 3
