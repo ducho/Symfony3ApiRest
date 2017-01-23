@@ -2,8 +2,10 @@
 # http://symfony.com/doc/current/book/security.html
 security:
     encoders:
-        Symfony\Component\Security\Core\User\User: plaintext
-
+        Symfony\Component\Security\Core\User\User:
+            algorithm: bcrypt
+            cost: 12
+ 
     role_hierarchy:
         ROLE_ADMIN:       ROLE_USER
         ROLE_SUPER_ADMIN: [ROLE_USER, ROLE_ADMIN, ROLE_ALLOWED_TO_SWITCH]
@@ -12,8 +14,8 @@ security:
         in_memory:
             memory:
                 users:
-                    user:  { password: userpass, roles: [ 'ROLE_USER', 'ROLE_API' ] }
-                    admin: { password: adminpass, roles: [ 'ROLE_ADMIN', 'ROLE_API'] }
+                    user:  { password: $2y$12$yVNMPPg63zWgwosY8uqzYF0FM27HoxvTFHVwJSrPlJMAWWWzOW, roles: [ 'ROLE_USER', 'ROLE_API' ] }
+                    admin: { password: $2y$12$UibGru0MT2wAJyBtWA12juBk4GrpovdeJrUd12hm4m5eczcoIuN3K, roles: [ 'ROLE_ADMIN', 'ROLE_API'] }
 
     # http://symfony.com/doc/current/book/security.html#where-do-users-come-from-user-providers
 
