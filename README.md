@@ -7,7 +7,7 @@ Simple Api Rest with Symfony 3
 
 ```
     $ curl -s http://getcomposer.org/installer | php
-    $ php composer.phar install
+    $ php composer.phar install or composer install
 ```
 
 ## Getting with Curl
