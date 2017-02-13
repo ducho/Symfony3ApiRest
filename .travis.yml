@@ -8,3 +8,10 @@ php:
 
 before_script:
   - composer install
+
+script:
+#  - php bin/console server:start
+  #- php bin/console doctrine:database:create
+  #- php bin/console doctrine:schema:create
+  #- php bin/console doctrine:fixtures:load
+  - ./vendor/bin/phpunit
