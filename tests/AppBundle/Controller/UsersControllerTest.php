@@ -16,7 +16,7 @@ class UsersControllerTest extends WebTestCase
         $handler = HandlerStack::create($mock);
         $this->client = new Client(['handler' => $handler]);
 
-		// or
+        // or
 	 /*  $this->client = new Client([
             'base_uri' => 'http://127.0.0.1:8000',
             'headers' => [
