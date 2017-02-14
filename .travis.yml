@@ -9,6 +9,7 @@ php:
   - 7.1
 
 before_script:
+  - mysql -e 'CREATE DATABASE test;'
   - composer install
 
 script:
