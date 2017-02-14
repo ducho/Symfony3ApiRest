@@ -10,8 +10,6 @@ use GuzzleHttp\Psr7\Response;
 
 class UsersControllerTest extends WebTestCase
 {
-    protected $client;
-
     public function setUp()
     {
         $mock = new MockHandler([new Response(200, [])]);
