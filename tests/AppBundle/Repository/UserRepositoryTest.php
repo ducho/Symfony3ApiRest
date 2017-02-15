@@ -18,7 +18,7 @@ class UserRepositoryTest extends KernelTestCase
                 ->getManager();
     }
 
-    public function testFindAllUsers()
+    public function testFindAllQueryBuilder()
     {
         $users = $this->em
             ->getRepository(User::class)
