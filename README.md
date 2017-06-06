@@ -3,7 +3,7 @@ Symfony3ApiRest
 
 [![Build Status](https://travis-ci.org/Tony133/Symfony3ApiRest.svg?branch=master)](https://travis-ci.org/Tony133/Symfony3ApiRest)
 
-Simple Api Rest with Symfony 3
+Simple Api Rest with Symfony 3.3
 
 ## Install with Composer
 
