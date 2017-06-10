@@ -1,13 +1,15 @@
 Symfony3ApiRest
 ========================
 
-Simple Api Rest with Symfony 3
+[![Build Status](https://travis-ci.org/Tony133/Symfony3ApiRest.svg?branch=master)](https://travis-ci.org/Tony133/Symfony3ApiRest)
+
+Simple Api Rest with Symfony 3.3
 
 ## Install with Composer
 
 ```
     $ curl -s http://getcomposer.org/installer | php
-    $ php composer.phar install
+    $ php composer.phar install or composer install
 ```
 
 ## Getting with Curl
